@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"math/rand"
+)
 
 
 func main(){
 
-	fmt.Println("Hello")
+	fmt.Println(math.Pi)
+	fmt.Println(rand.Intn(10))
+
 }
