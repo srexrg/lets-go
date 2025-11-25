@@ -1,10 +1,11 @@
 package main
 
+
 import (
 	"fmt"
 )
 
-var var1 ,var2 int
+var var1,var2 int
 
 var ao = 0
 
@@ -18,6 +19,7 @@ func swap(a,b string) (string,string){
 	return b,a
 }
 
+var aboolval = false
 
 func main(){
 	newvar := 10
@@ -25,5 +27,9 @@ func main(){
 	a,b := swap("world","hello")
 	fmt.Println(a,b)
 	fmt.Println(newvar,ao,var1,var2)
+	fmt.Printf("Boolean value: %t\n", aboolval)
+
+	fmt.Println(Loop(5,10))
+
 
 }
