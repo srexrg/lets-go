@@ -32,6 +32,24 @@ func main(){
 			for i:=0;i<len(tasks);i++{
 				fmt.Printf("%d %s\n",i+1,tasks[i])
 			}
+		}else if text == "delete"{
+
+			if len(tasks)==0{
+				fmt.Println("No tasks")
+			}else{
+				for i:=0;i<len(tasks);i++{
+				fmt.Printf("%d %s\n",i+1,tasks[i])
+			}
+			var tasknum int 
+			fmt.Scanf("%d",&tasknum)
+
+			deletedTask := tasks[tasknum-1]
+			tasks = append(tasks[:tasknum-1], tasks[tasknum:]...)
+			fmt.Printf("deleted task %s",deletedTask)
+
+			}
+
+
 		}else if text == "quit"{
 			fmt.Println("good bye")
 			os.Exit(0)
